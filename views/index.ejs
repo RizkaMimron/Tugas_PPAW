@@ -1,0 +1,38 @@
+<%- include('layouts/header') %> <%- include('layouts/nav') %>
+
+<head>
+  <style>
+    body {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      color: #333;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      margin-left: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+<h1>Berikut Ini Merupakan Halaman Index</h1>
+
+<h1>Halo nama saya Rizka M Imron</h1>
+
+<% mahasiswa.forEach(mhs => { %>
+<ul>
+  <li>Nama: <%= mhs.nama %></li>
+  <li>Email: <%= mhs.email %></li>
+</ul>
+<% }) %> <%- include('layouts/footer') %>
